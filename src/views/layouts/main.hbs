@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgShare</title>
+    {{!-- Bootstrap --}}
+    <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.min.css">
+    {{!-- css --}}
+    <link rel="stylesheet" href="/public/css/styles.css">
+    {{!-- font awesome --}}
+    <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+            <img src="/public/img/imgshare-logo.png" alt="logo">
+            </a>
+        </div>
+    </nav>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-8">
+                {{{ body }}}        
+            </div>
+            <div class="col-md-4">
+                {{> stats}}
+                {{> popular}}
+                {{> comments}}
+            </div>
+        </div>
+
+    </div>
+
+{{!-- Scripts --}}
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+{{!-- custom script --}}
+    <script src="/public/js/script.js"></script>
+
+</body>
+</html>

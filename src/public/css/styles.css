@@ -1,0 +1,11 @@
+body {
+    background: #dcdde1;
+}
+
+.navbar-brand img {
+    width: 60%
+}
+
+.form-group{
+    margin: 10px 0;
+}
